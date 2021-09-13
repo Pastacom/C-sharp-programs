@@ -1,0 +1,15 @@
+E:\Visual Studio\HW1\Task04\bin\Debug\net5.0\Task04.exe
+E:\Visual Studio\HW1\Task04\bin\Debug\net5.0\Task04.deps.json
+E:\Visual Studio\HW1\Task04\bin\Debug\net5.0\Task04.runtimeconfig.json
+E:\Visual Studio\HW1\Task04\bin\Debug\net5.0\Task04.runtimeconfig.dev.json
+E:\Visual Studio\HW1\Task04\bin\Debug\net5.0\Task04.dll
+E:\Visual Studio\HW1\Task04\bin\Debug\net5.0\ref\Task04.dll
+E:\Visual Studio\HW1\Task04\bin\Debug\net5.0\Task04.pdb
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\Task04.GeneratedMSBuildEditorConfig.editorconfig
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\Task04.AssemblyInfoInputs.cache
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\Task04.AssemblyInfo.cs
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\Task04.csproj.CoreCompileInputs.cache
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\Task04.dll
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\ref\Task04.dll
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\Task04.pdb
+E:\Visual Studio\HW1\Task04\obj\Debug\net5.0\Task04.genruntimeconfig.cache
