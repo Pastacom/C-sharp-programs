@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\Task01\\Task01.csproj": {}
+    "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\Task01\\Task01.csproj": {}
   },
   "projects": {
-    "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\Task01\\Task01.csproj": {
+    "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\Task01\\Task01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\Task01\\Task01.csproj",
+        "projectUniqueName": "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\Task01\\Task01.csproj",
         "projectName": "Task01",
-        "projectPath": "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\Task01\\Task01.csproj",
+        "projectPath": "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\Task01\\Task01.csproj",
         "packagesPath": "C:\\Users\\shind_wvnx\\.nuget\\packages\\",
-        "outputPath": "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\Task01\\obj\\",
+        "outputPath": "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\Task01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shind_wvnx\\AppData\\Roaming\\NuGet\\NuGet.Config",

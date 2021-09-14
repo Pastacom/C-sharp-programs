@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\ASCIIDecoder\\ASCIIDecoder.csproj": {}
+    "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\ASCIIDecoder\\ASCIIDecoder.csproj": {}
   },
   "projects": {
-    "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\ASCIIDecoder\\ASCIIDecoder.csproj": {
+    "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\ASCIIDecoder\\ASCIIDecoder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\ASCIIDecoder\\ASCIIDecoder.csproj",
+        "projectUniqueName": "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\ASCIIDecoder\\ASCIIDecoder.csproj",
         "projectName": "ASCIIDecoder",
-        "projectPath": "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\ASCIIDecoder\\ASCIIDecoder.csproj",
+        "projectPath": "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\ASCIIDecoder\\ASCIIDecoder.csproj",
         "packagesPath": "C:\\Users\\shind_wvnx\\.nuget\\packages\\",
-        "outputPath": "E:\\Visual Studio\\219ShindyapkinIlya\\HW1\\ASCIIDecoder\\obj\\",
+        "outputPath": "E:\\Visual Studio\\219ShindyapkinIlya\\Module_1\\Lesson_1\\HW\\ASCIIDecoder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shind_wvnx\\AppData\\Roaming\\NuGet\\NuGet.Config",
