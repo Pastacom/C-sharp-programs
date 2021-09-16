@@ -1,0 +1,16 @@
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\bin\Debug\net5.0\Task02.exe
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\bin\Debug\net5.0\Task02.deps.json
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\bin\Debug\net5.0\Task02.runtimeconfig.json
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\bin\Debug\net5.0\Task02.runtimeconfig.dev.json
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\bin\Debug\net5.0\Task02.dll
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\bin\Debug\net5.0\ref\Task02.dll
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\bin\Debug\net5.0\Task02.pdb
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.csproj.AssemblyReference.cache
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.GeneratedMSBuildEditorConfig.editorconfig
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.AssemblyInfoInputs.cache
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.AssemblyInfo.cs
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.csproj.CoreCompileInputs.cache
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.dll
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\ref\Task02.dll
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.pdb
+E:\Visual Studio\219ShindyapkinIlya\Module_1\Lesson_3\HW\Task02\obj\Debug\net5.0\Task02.genruntimeconfig.cache
