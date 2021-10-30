@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 class Polygon
 {
-    public int Edges { get; set; }
-    public double Radius { get; set; }
+    public int Edges { get;}
+    public double Radius { get;}
     public Polygon(int edges = 0, double radius = 0)
     {
         Edges = edges; Radius = radius;
