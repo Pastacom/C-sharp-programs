@@ -52,6 +52,8 @@ class Program
         Animal dog = new Dog("doge", 5, "shiba inu", true);
         Animal cow = new Cow("MooMoo", 9, 5);
         Console.WriteLine(dog.AnimalInfo());
+        Console.WriteLine(dog.AnimalSound());
         Console.WriteLine(cow.AnimalInfo());
+        Console.WriteLine(cow.AnimalSound());
     }
 }
