@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Linq;
 namespace Task01
 {
     abstract class Person
@@ -17,33 +18,36 @@ namespace Task01
         }
         public override string ToString()
         {
-            return $"Name = {Name} Pocket = {Pocket} ";
+            return $"Name = {Name}, Pocket = {Pocket}";
         }
     }
     class SnowMaiden : Person
     {
         public SnowMaiden(string name) : base(name) { }
+        private string CreateName()
+        {
+            StringBuilder str = new();
+            for (int i = 0; i < 3; i++)
+            {
+                str.Append((char)random.Next('a', 'z' + 1));
+            }
+            return str.ToString() + str[1] + str[0];
+        }
+        public string[] CreatePresent(int amount)
+        {
+            string[] gifts = new string[amount];
+            for (int i = 0; i < amount; i++)
+            {
+                gifts[i] = CreateName();
+            }
+            return gifts;
+        }
         public override void Receive(string present)
         {
             if (Pocket.Equals(string.Empty))
                 Pocket = present;
             else
                 throw new ArgumentException(">1 gifts");
-        }
-        private string CreateString()
-        {
-            int n = random.Next(4, 11);
-            StringBuilder sb = new StringBuilder(n);
-            for (int i = 0; i < n; i++)
-                sb.Append((char)random.Next('a', 'z' + 1));
-            return sb.ToString();
-        }
-        public string[] CreatePresents(int amount)
-        {
-            string[] gifts = new string[amount];
-            for (int i = 0; i < amount; i++)
-                gifts[i] = CreateString();
-            return gifts;
         }
     }
     class Santa : Person
@@ -51,24 +55,18 @@ namespace Task01
         List<string> sack;
         public void Request(SnowMaiden snowMaiden, int amount)
         {
-            sack.AddRange(snowMaiden.CreatePresents(amount));
+            sack.AddRange(snowMaiden.CreatePresent(amount));
         }
         public Santa(string name) : base(name)
         {
             sack = new List<string>();
         }
-        public override void Receive(string present)
-        {
-            if (Pocket.Equals(string.Empty))
-                Pocket = present;
-            else
-                throw new ArgumentException(">1 gifts");
-        }
         public void Give(Person person)
         {
-            int n = random.Next(0, sack.Count);
+            Console.WriteLine("Sack:" + sack.Count);
             if (sack.Count > 0)
             {
+                int n = random.Next(0, sack.Count);
                 person.Receive(sack[n]);
                 sack.RemoveAt(n);
             }
@@ -76,6 +74,13 @@ namespace Task01
             {
                 throw new IndexOutOfRangeException();
             }
+        }
+        public override void Receive(string present)
+        {
+            if (Pocket.Equals(string.Empty))
+                Pocket = present;
+            else
+                throw new ArgumentException(">1 gifts");
         }
     }
     class Child : Person
@@ -92,43 +97,85 @@ namespace Task01
             else if (AdditionalPocket.Equals(string.Empty))
                 AdditionalPocket = present;
             else
-                throw new ArgumentException(">2 gifts");
+                throw new ArgumentException(">1 gifts");
         }
         public override string ToString()
         {
-            return $"Name = {Name} Pocket = {Pocket} Pocket2 = {AdditionalPocket}";
+            return base.ToString() + $", AdditionalPocket = {AdditionalPocket}";
         }
     }
-
     class Program
     {
         static void Main(string[] args)
         {
-            Santa santa = new Santa("Santa");
-            SnowMaiden snowMaiden = new SnowMaiden("SnowMaiden");
-            int n = 10;
-            List<Person> people = new List<Person>(n + 2);
-            people.Add(santa);
-            people.Add(snowMaiden);
-            for (int i = 2; i < n + 2; i++)
-                people[i] = new Child(i.ToString());
-            for (int i = 0; i < n + 2; i++)
-                Console.WriteLine(people[i].ToString());
-            Console.WriteLine("***");
-            Random random = new Random();
-            for (int i = 0; i < n + 1; i++)
+            do
             {
-                int prob = random.Next(0, 101);
-                if (prob < 10)
+                Santa santa = new Santa("Santa");
+                SnowMaiden snowMaiden = new SnowMaiden("SnowMaiden");
+                Random random = new Random();
+                List<Person> people = new List<Person>();
+                people.Add(santa);
+                people.Add(snowMaiden);
+                int n = 10;
+                for (int i = 0; i < n; i++)
+                    people.Add(new Child(i.ToString()));
+                for (int i = 0; i < n + 2; i++)
+                    Console.WriteLine(people[i]);
+                Console.WriteLine("***");
+                santa.Request(snowMaiden, 1);
+                while (people.Contains(santa) && people.Count > 1)
                 {
-                    santa.Give(people[0]);
+                    int prob = random.Next(0, 101);
+                    if (prob < 10)
+                    {
+                        try
+                        {
+                            santa.Give(people[0]);
+                            Console.WriteLine(people[0]);
+                        }
+                        catch (IndexOutOfRangeException)
+                        {
+                            Console.WriteLine("Кончились подарки!");
+                            break;
+                        }
+                        catch (ArgumentException)
+                        {
+                            Console.WriteLine(people[0]);
+                            people.RemoveAt(0);
+                            Console.WriteLine("Нельзя больше брать подарки!");
+                            Console.WriteLine("Санту выгнали.");
+                            continue;
+                        }
+                    }
+                    else
+                    {
+                        int index = random.Next(1, people.Count);
+                        try
+                        {
+                            santa.Give(people[index]);
+                            Console.WriteLine(people[index]);
+                        }
+                        catch (IndexOutOfRangeException)
+                        {
+                            Console.WriteLine("Кончились подарки!");
+                            break;
+                        }
+                        catch (ArgumentException)
+                        {
+                            Console.WriteLine(people[index]);
+                            Console.WriteLine("Нельзя больше брать подарки!");
+                            Console.WriteLine($"{people[index].Name} выгнали.");
+                            people.RemoveAt(index);
+                            continue;
+                        }
+                    }
+                    if (people.Contains(snowMaiden))
+                    {
+                        santa.Request(snowMaiden, random.Next(1, 5));
+                    }
                 }
-                else
-                {
-                    santa.Give(people[i]);
-                    santa.Request(snowMaiden, random.Next(1, 5));
-                }
-            }
+            } while (Console.ReadKey().Key != ConsoleKey.Escape);
+
         }
     }
 }
