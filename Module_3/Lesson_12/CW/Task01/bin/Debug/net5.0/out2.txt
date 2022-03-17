@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ArrayOfGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Group>
+    <Students>
+      <Student>
+        <Surname>a</Surname>
+        <Year>1</Year>
+      </Student>
+      <Student>
+        <Surname>b</Surname>
+        <Year>1</Year>
+      </Student>
+    </Students>
+    <Id>219</Id>
+  </Group>
+  <Group>
+    <Students>
+      <Student>
+        <Surname>c</Surname>
+        <Year>3</Year>
+      </Student>
+      <Student>
+        <Surname>d</Surname>
+        <Year>3</Year>
+      </Student>
+    </Students>
+    <Id>128</Id>
+  </Group>
+</ArrayOfGroup>
